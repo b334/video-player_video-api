@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(67, 129, 211);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.controls {
+  display: flex;
+  column-gap: 12px;
+  background-color: black;
+  padding: 8px 20px;
+  font-size: 20px;
+}
+
+.control-btn {
+  cursor: pointer;
+}
+
+.control-btn #play {
+  color: green;
+}
+
+.control-btn #stop {
+  color: red;
+}
+
+.progress-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%;
+}
+
+#progress {
+  position: absolute;
+  border: 2px solid blue;
+  width: 100%;
+}
+
+#progress-slider {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  width: 7px;
+  height: 18px;
+  background-color: #cecece;
+  cursor: pointer;
+}
+
+.time-duration {
+  color: white;
+}

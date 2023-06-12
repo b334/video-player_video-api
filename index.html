@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- project css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Video player</title>
+  </head>
+  <body>
+    <div class="container">
+      <video src="media/clouds.mov" id="video" poster="media/poster.png"></video>
+      <div class="controls">
+        <div class="control-btn">
+          <div id="play"><i class="fa-solid fa-play"></i></div>
+        </div>
+        <div class="control-btn">
+          <div id="stop"><i class="fa-solid fa-stop"></i></div>
+        </div>
+        <div class="progress-container">
+          <div id="progress-slider"><span class="slider"></span></div>
+          <div id="progress"></div>
+        </div>
+        <div class="time-duration">
+          <div id="time-duration">00:00</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
