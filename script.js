@@ -87,8 +87,8 @@ function displayTimeDuration() {
 }
 
 function updateProgressUI(currentTime, duration) {
-  const progressPercent = Math.floor((currentTime / duration) * 100);
-  progressSlider.style.left = progressPercent !== 100 ? `calc(${progressPercent}%)` : `calc(${progressPercent}% - 7px)`;
+  const progressPercent = (currentTime / duration) * 100;
+  progressSlider.style.left = progressPercent !== 100 ? `${progressPercent}%` : `calc(${progressPercent}% - 7px)`;
 }
 
 function displayTimeDurationUI(hours, minutes, seconds) {
