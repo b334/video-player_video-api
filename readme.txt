@@ -1,1 +1,1 @@
-Video player using JS and video api.
+Video player using JS and video api. User can slide slider or click progress bar to change video playback time.
